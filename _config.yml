@@ -1,21 +1,35 @@
-# Site settings
-title: Wenqing's Homepage
-description: Every day is a good day.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://conchaespina.github.io" # the base hostname & protocol for your site e.g. http://willianjusten.com.br
+###########
+# site.title
 
-# User settings
-username: Wenqing Qian
-user_description: I am an undergraduate student majoring in statistics at Fudan University.
-# user_title: Software Engineer
-email: claireq99@gmail.com
-# twitter_username: lorem_ipsum
-# instagram_username: lorem_ipsum
-# facebook_username: lorem_ipsum
-# linkedin_username: lorem_ipsum
-github_username:  conchaespina
-# medium_username: lorem_ipsum
-# medium_url: lorem_ipsum.medium.com
-# gplus_username:  lorem_ipsum
+title: ET-Jekyll Theme
+description: A minimal Jekyll theme inspired by Tufte CSS
+url: "https://et-jekyll.netlify.app"
+host: 0.0.0.0
 
-exclude: ['package.json', 'src' , 'node_modules']
+
+#########################
+# more settings
+
+markdown: kramdown
+
+compress_html:
+  clippings: all
+  comments: [""]
+  endings: [html, head, body, li, dt, dd, rt, rp, optgroup, option, colgroup, caption, thead, tbody, tfoot, tr, td, th]
+  profile: false
+  blanklines: false
+  ignore:
+    envs: []
+
+sass:
+  sass_dir: css
+  style:    compressed
+
+baseurl: ""
+permalink: pretty
+timezone: America/New_York
+future: false
+
+exclude:
+- README.md
+- LICENSE.md

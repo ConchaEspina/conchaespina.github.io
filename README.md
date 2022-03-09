@@ -1,4 +1,5 @@
-# ET-Jekyll
+# Information about the Template
+## ET-Jekyll
 A minimal Jekyll theme inspired by <a href="https://github.com/edwardtufte/tufte-css">Tufte CSS</a>
 
 ### Live Demo

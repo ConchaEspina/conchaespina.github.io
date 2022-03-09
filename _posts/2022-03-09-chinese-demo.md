@@ -7,6 +7,8 @@ permalink: chinese-demo/
 date: 2022-03-09
 ---
 
+看起来中文显示没什么问题...开心:watermelon:
+
 ## 测试标题
 
 **测试**_文字_<u>格式</u>

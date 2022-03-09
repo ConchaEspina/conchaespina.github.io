@@ -1,8 +1,7 @@
 ---
 layout: articles
-title: Articles
-description: A collection of blog posts covering design and development across all mediums
+title: Blogs
+description: Blog posts summarizing books and journal articles I am reading
 ---
 
-<p>A collection of blog posts covering design and development across all mediums.</p>
 

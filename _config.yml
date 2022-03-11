@@ -10,9 +10,7 @@ host: 0.0.0.0
 #########################
 # more settings
 
-markdown: 
-  kramdown:
-    math_engine: null
+markdown: kramdown
 
 compress_html:
   clippings: all

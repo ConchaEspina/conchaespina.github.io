@@ -75,7 +75,7 @@ d_a(\mathbf{x, y}) = d_a(\mathbf{x} \oplus \mathbf{y}^{-1}, \mathbf{e})
 $$
 对于$S^D$中的任意$\mathbf{x, y}$，其Aitchison距离等于$\mathbf{x}$与$\mathbf{y}^{-1}$的和与单位元的Aitchison距离。
 
-***定理2.1.2***   对任意的$\mathbf{x, y} \in S^D,\ \alpha \in \mathbb{R}$，有$d_a(\alpha \otimes \mathbf{x}, \alpha \otimes \mathbf{y}) = |\alpha| \cdot d_a(\mathbf{x,y})$。
+***定理2.1.2***   对任意的$\mathbf{x, y} \in S^D,\ \alpha \in \mathbb{R}$，有$d_a ( \alpha \otimes \mathbf{x}, \alpha \otimes \mathbf{y}) = | \alpha | \cdot d_a ( \mathbf{x,y} )$。
 
 ***定理2.1.3***   在向量成比例时，Aitchison距离不变。
 

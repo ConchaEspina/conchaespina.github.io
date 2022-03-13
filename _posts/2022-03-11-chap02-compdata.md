@@ -137,7 +137,7 @@ $$
 服从多元正态分布$N(\mathbf{\mu,\Sigma})$，则称成分$\mathbf{x}$服从乘法逻辑正态分布。
 
 由上式可知，如果用$y_i$来表示$x_i$，有如下表达式<span class="sidenote-number"></span> 
-<span class="sidenote">可用数学归纳法与定和限制为1加以证明。</span>：
+<span class="sidenote">可用数学归纳法与定和限制$\sum_{i=1}^D x_i = 1$加以证明。原书此处$x_D$的表达式似乎有误。</span>：
 $$
 \begin{cases}x_i = \dfrac{e^{y_i}}{\prod\limits_{j=1}^i (1 + e^{y_j})},\quad i=1,2,\cdots,D-1 \\ x_D = \dfrac{1}{\prod\limits_{j=1}^{D-1} (1 + e^{y_j})}\end{cases}
 $$
@@ -174,15 +174,18 @@ $$
 
 ***定理2.2.1***   令$\mathbf{u}_i \in \mathbb{R}^D,\ i=1,2,\cdots,D-1$，且
 $$
-\mathbf{u}_i = \sqrt{\frac{i}{i+1}} \left(\underbrace{\frac{1}{i}, \cdots, \frac{1}{i}}_{i个}, -1, 0, \cdots, 0\right)
+\mathbf{u}_i = \sqrt{\frac{i}{i+1}} \Big(\underbrace{\frac{1}{i}, \cdots, \frac{1}{i}}_{i个}, -1, 0, \cdots, 0\Big)
 $$
 则$\mathbf{u}_i$在欧氏空间中是正交的，且组成了$D-1$维子空间。
 
+***定理2.2.2***   令$\mathbf{e}_i,\ i=1,2,\cdots,D-1$是$S^D$空间中的向量，且<span class="sidenote-number"></span> 
+<span class="sidenote">原书$\mathbf{e}_i$的表达式似乎有误。</span>
+$$
+\mathbf{e}_i = C(\exp(\mathbf{u}_i)) = C\Big(\exp\Big(\underbrace{\sqrt{\frac{1}{i(i+1)}}, \cdots, \sqrt{\frac{1}{i(i+1)}}}_{i个}, -\sqrt{\frac{i}{i+1}}, 0, \cdots, 0\Big)\Big)
+$$
+则成分向量$\mathbf{e}_i,\ i=1,2,\cdots,D-1$在$S^D$空间以Aitchison内积尺度正交，组成了$S^D$中的正交基。
 
-
-
-
-
+alr变换，clr变换和ilr变换的性质及相互之间的关系如下所述：
 
 
 

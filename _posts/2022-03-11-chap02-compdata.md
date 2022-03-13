@@ -105,7 +105,7 @@ $$
 
 如果变换后的$\mathbf{y} = (y_1, y_2, \cdots, y_{D-1})$服从多元正态分布，则称$\mathbf{x} = [x_1, x_2, \cdots, x_D]$服从加法逻辑正态分布。
 
-对数比变换的特点：
+非对称对数比变换的特点：
 
 - 优势
   1. 可以克服“定和限制”
@@ -136,10 +136,50 @@ $$
 $$
 服从多元正态分布$N(\mathbf{\mu,\Sigma})$，则称成分$\mathbf{x}$服从乘法逻辑正态分布。
 
-由上式可知，如果用$y_i$来表示$x_i$，有如下表达式：
+由上式可知，如果用$y_i$来表示$x_i$，有如下表达式<span class="sidenote-number"></span> 
+<span class="sidenote">可用数学归纳法与定和限制为1加以证明。</span>：
 $$
 \begin{cases}x_i = \dfrac{e^{y_i}}{\prod\limits_{j=1}^i (1 + e^{y_j})},\quad i=1,2,\cdots,D-1 \\ x_D = \dfrac{1}{\prod\limits_{j=1}^{D-1} (1 + e^{y_j})}\end{cases}
 $$
+
+### 2.2.2   对称对数比（clr）变换
+
+***定义2.2.3（对称对数比变换）***   设成分向量$\mathbf{x} = [x_1, x_2, \cdots, x_D]$，做变换：
+$$
+y_i = \ln \frac{x_i}{\sqrt[D]{\prod\limits_{j=1}^D x_j}},\quad i=1,2,\cdots,D
+$$
+这种变换称为对称对数比变换。
+
+如果用$y_i$来表示$x_i$，有如下表达式：
+$$
+x_i = \frac{e^{y_i}}{\sum\limits_{j=1}^D e^{y_j}},\quad i=1,2,\cdots,D
+$$
+对称对数比变换的特点：
+
+- 优势：
+  1. 相对于alr变换而言，有效解决了变换后分量不能与原有分量一一对应的不足，增强了解释性
+- 缺陷：
+  1. 变换后的各个分量之和为零
+  2. 与之相对应的协方差阵是奇异的
+
+### 2.2.3   等距对数比（ilr）变换
+
+***定义2.2.4（等距对数比变换）***   设$\mathbf{x} = [x_1, x_2, \cdots, x_D]$是成分向量，做如下变换：
+$$
+z_i = \sqrt{\frac{D-i}{D-i+1}} \ln \frac{\sqrt[D-i]{\prod\limits_{l=i+1}^D x_l}}{x_i},\quad i=1,2,\cdots,D-1
+$$
+则可将$D$维向量$\mathbf{x} = [x_1, x_2, \cdots, x_D]$等距对数比变换成$D-1$维向量$\mathbf{z} = (z_1, z_2, \cdots, z_{D-1})$。
+
+等距变换使得成分数据从单形空间映射到欧氏空间中，并且可以保证单形空间中的两组成分数据之间的Aitchison距离与通过等距变换后的两组数据的欧氏距离相等。
+
+***定理2.2.1***   令$\mathbf{u}_i \in \mathbb{R}^D,\ i=1,2,\cdots,D-1$，且
+$$
+\mathbf{u}_i = \sqrt{\frac{i}{i+1}} \left(\underbrace{\frac{1}{i}, \cdots, \frac{1}{i}}_{i个}, -1, 0, \cdots, 0\right)
+$$
+则$\mathbf{u}_i$在欧氏空间中是正交的，且组成了$D-1$维子空间。
+
+
+
 
 
 

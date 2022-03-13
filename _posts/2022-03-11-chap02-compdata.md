@@ -130,5 +130,21 @@ $$
 $$
 Q = (F \ln \mathbf{x - \mu})^\top |\mathbf\Sigma|^{-1/2} (F \ln \mathbf{x - \mu}),\quad F = (-\mathbf{1}, \mathbf{I}_{D-1})
 $$
+***定义2.2.2***   假定成分向量$\mathbf{x} = [x_1, x_2, \cdots, x_D]$的函数：
+$$
+\mathbf{y} = (y_1, y_2, \cdots, y_D),\ y_i = \ln \left(\frac{x_i}{1 - \sum_{j=1}^i x_j}\right),\quad i=1,2,\cdots,D
+$$
+服从多元正态分布$N(\mathbf{\mu,\Sigma})$，则称成分$\mathbf{x}$服从乘法逻辑正态分布。
+
+由上式可知，如果用$y_i$来表示$x_i$，有如下表达式：
+$$
+\begin{cases}x_i = \dfrac{e^{y_i}}{\prod\limits_{j=1}^i (1 + e^{y_j})},\quad i=1,2,\cdots,D-1 \\ x_D = \dfrac{1}{\prod\limits_{j=1}^{D-1} (1 + e^{y_j})}\end{cases}
+$$
+
+
+
+
+
+
 
 

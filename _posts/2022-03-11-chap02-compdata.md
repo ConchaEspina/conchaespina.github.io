@@ -217,7 +217,7 @@ $\mathbf{A} = \dfrac{1}{D} \begin{bmatrix}D-1 & -1 & -1 & \cdots & -1 & -1 \\ -1
 
 ### 2.2.4   球坐标变换
 
-球坐标变换可以解决对数比变换中零成分变换的困境。<span class="sidenote-number"></span><span class="sidenote-number">王惠文,刘强. (2002). 成分数据预测模型及其在中国产业结构趋势分析中的应用. *中外管理导报*(05), 27-29.</span>
+球坐标变换可以解决对数比变换中零成分变换的困境，<span class="sidenote-number"></span><span class="sidenote-number">王惠文,刘强. (2002). 成分数据预测模型及其在中国产业结构趋势分析中的应用. *中外管理导报*(05), 27-29.</span>提供了一种变换方法，但它并没有具体的理论指导。
 
 ***定义2.2.5*** 对于成分向量$\mathbf{x} = [x_1, x_2, \cdots, x_D]$，满足定和限制$\sum\limits_{i=1}^D x_i = 1$，首先对成分向量的各分量开根号得：$y_i = \sqrt{x_i}$，此时有$\sum\limits_{i=1}^D y_i^2 = 1$，那么向量$\mathbf{y} = (y_1, y_2, \cdots, y_D)$可以看成超球面上的点，球坐标变换把$D$维向量$\mathbf{y} = (y_1, y_2, \cdots, y_D) \in \mathbb{R}^D$映射到超球面$(r, \theta_2, \cdots, \theta_D) \in \Theta^D$，这里$r^2 = \|\mathbf{y}\|^2 = 1$，且有
 $$
@@ -231,6 +231,23 @@ $$
 $$
 \begin{cases}\theta_D = \arccos y_D \\ \theta_{D-1} = \arccos\left(\dfrac{y_{D-1}}{\sin\theta_D}\right) \\ \theta_{D-2} = \arccos\left(\dfrac{y_{D-2}}{\sin\theta_D \sin\theta_{D-1}}\right) \\ \cdots \\ \theta_2 = \arccos\left(\dfrac{y_2}{\sin\theta_D \sin\theta_{D-1} \cdots \sin\theta_3}\right)\end{cases}
 $$
+
+## 2.3   成分数据分析的困难
+
+### 2.3.1   高维数据困难
+
+对于高维困难，最常用的一种解决方式是投影。关于高维成分数据的投影，有以下三个特点：
+
+1. 部分分析方法：投影方法将注意力集中于子成分的选择，而不是整个成分。
+2. 图像分析不一定能解决高维成分数据的问题，因为不能保证单形空间上的图形与一般实数空间上的图形有相同的解释。一个可供选择的单形空间中的投影是：在所有成分中选择一个方差变化最大的成分，其余$D-1$个成分分别与该成分进行画图。
+3. 借助多元统计分析技术可以实现成分数据作为一个整体的分析，而不必求助于部分分析。
+
+### 2.3.2   缺乏可解释的方差结构
+
+***定义2.3.1（成分数据的协方差结构）***
+
+
+
 
 
 

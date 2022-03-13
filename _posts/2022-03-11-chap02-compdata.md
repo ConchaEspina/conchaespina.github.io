@@ -217,7 +217,7 @@ $\mathbf{A} = \dfrac{1}{D} \begin{bmatrix}D-1 & -1 & -1 & \cdots & -1 & -1 \\ -1
 
 ### 2.2.4   球坐标变换
 
-球坐标变换可以解决对数比变换中零成分变换的困境，<span class="sidenote-number"></span><span class="sidenote-number">王惠文,刘强. (2002). 成分数据预测模型及其在中国产业结构趋势分析中的应用. *中外管理导报*(05), 27-29.</span>提供了一种变换方法，但它并没有具体的理论指导。
+球坐标变换可以解决对数比变换中零成分变换的困境，<span class="sidenote-number"></span><span class="sidenote">王惠文,刘强. (2002). 成分数据预测模型及其在中国产业结构趋势分析中的应用. *中外管理导报*(05), 27-29.</span>提供了一种变换方法，但它并没有具体的理论指导。
 
 ***定义2.2.5*** 对于成分向量$\mathbf{x} = [x_1, x_2, \cdots, x_D]$，满足定和限制$\sum\limits_{i=1}^D x_i = 1$，首先对成分向量的各分量开根号得：$y_i = \sqrt{x_i}$，此时有$\sum\limits_{i=1}^D y_i^2 = 1$，那么向量$\mathbf{y} = (y_1, y_2, \cdots, y_D)$可以看成超球面上的点，球坐标变换把$D$维向量$\mathbf{y} = (y_1, y_2, \cdots, y_D) \in \mathbb{R}^D$映射到超球面$(r, \theta_2, \cdots, \theta_D) \in \Theta^D$，这里$r^2 = \|\mathbf{y}\|^2 = 1$，且有
 $$

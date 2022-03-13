@@ -162,7 +162,7 @@ $$
   1. 变换后的各个分量之和为零
   2. 与之相对应的协方差阵是奇异的
 
-### 2.2.3   等距对数比（ilr）变换
+### 2.2.3   等距对数比(ilr)变换
 
 ***定义2.2.4（等距对数比变换）***   设$\mathbf{x} = [x_1, x_2, \cdots, x_D]$是成分向量，做如下变换：
 $$
@@ -185,9 +185,21 @@ $$
 $$
 则成分向量$\mathbf{e}_i,\ i=1,2,\cdots,D-1$在$S^D$空间以Aitchison内积尺度正交，组成了$S^D$中的正交基。
 
-alr变换，clr变换和ilr变换的性质及相互之间的关系如下所述：
+**alr变换，clr变换和ilr变换的性质及相互之间的关系如下所述：**
 
-
-
-
-
+***性质2.2.1***   ilr变换把$S^D$空间的向量映射到$\mathbb{R}^{D-1}$空间中，对于任意的$\mathbf{x} \in S^D$都有：
+$$
+\mathbf{y} = \mathrm{ilr}(\mathbf{x}) = (\langle\mathbf{x, e}_1\rangle_a, \langle\mathbf{x, e}_2\rangle_a, \cdots, \langle\mathbf{x, e}_{D-1}\rangle_a)
+$$
+其中：
+$$
+\mathbf{e}_i = C(\exp(\mathbf{u}_i)) = C\Big(\exp\Big(\underbrace{\sqrt{\frac{1}{i(i+1)}}, \cdots, \sqrt{\frac{1}{i(i+1)}}}_{i个}, -\sqrt{\frac{i}{i+1}}, 0, \cdots, 0\Big)\Big)，\quad i=1,2,\cdots,D-1
+$$
+***性质2.2.2***   对于任意的$\mathbf{x}_1, \mathbf{x}_2 \in S^D$及任意的$\alpha \in \mathbb{R}$，且$\mathbf{y}_1 = \mathrm{ilr}(\mathbf{x}_1), \mathbf{y}_2 = \mathrm{ilr}(\mathbf{x}_2)$，有如下结论成立：
+$$
+\mathrm{ilr}(\mathbf{x}_1 \oplus \mathbf{x}_2) = \mathbf{y}_1 + \mathbf{y}_2 \\ \mathrm{ilr}(\alpha \otimes \mathbf{x}_i) = \alpha \mathbf{y}_i,\quad i=1,2
+$$
+*** 性质2.2.3***   对于任意的$\alpha, \beta \in \mathbb{R}$及$\mathbf{x}_1, \mathbf{x}_2 \in S^D, \mathbf{e}_i \in S^D$和$\mathbf{u}_i \in \mathbb{R}^{D-1}$如定理2.2.1和定理2.2.2所述，clr变换有如下结论成立：
+$$
+\mathrm{clr}(\mathbf{e}_i) = \mathbf{u}_i \\ \mathrm{clr}((\alpha \otimes \mathbf{x}_1) \oplus (\beta \otimes \mathbf{x}_2)) = \alpha \mathrm{clr}(\mathbf{x}_1) + \beta \mathrm{clr}(\mathbf{x}_2)
+$$

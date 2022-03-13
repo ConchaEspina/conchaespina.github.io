@@ -211,9 +211,9 @@ $$
 
 $\mathbf{U}$是$(D-1) \times D$维矩阵，$\mathbf{u}_i$是它的行向量
 
-$\mathbf{F} = [\mathbf{I}_{D-1},$ $\mathbf{1}_{D-1}^\top]^\top$
+$\mathbf{F} = [\mathbf{I}_{D-1},\ \mathbf{1}_{D-1}^\top]^\top$
 
-$\mathbf{A} = \dfrac{1}{D} \begin{bmatrix}D-1 & -1 & -1 & \cdots & -1 & -1 \\ -1 & D-1 & -1 & \cdots & -1 & -1 \\ -1 & -1 & D-1 & \cdots & -1 & -1 \\ \vdots & \vdots & \vdots & & \vdots & \vdots \\ -1 & -1 & -1 & \cdots & D-1 & -1\end{bmatrix}_{(D-1) \times D}$
+$\mathbf{A} = \dfrac{1}{D} \left[\begin{array}D-1 & -1 & -1 & \cdots & -1 & -1 \\ -1 & D-1 & -1 & \cdots & -1 & -1 \\ -1 & -1 & D-1 & \cdots & -1 & -1 \\ \vdots & \vdots & \vdots & & \vdots & \vdots \\ -1 & -1 & -1 & \cdots & D-1 & -1\end{array}\right]_{(D-1) \times D}$
 
 ### 2.2.4   球坐标变换
 

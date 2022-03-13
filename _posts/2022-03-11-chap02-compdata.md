@@ -8,17 +8,19 @@ date: 2022-03-11
 
 ## 2.1   成分数据的定义及运算
 
+### 2.1.1   成分数据空间
+
 ***定义2.1.1（$D$维成分数据空间）***   称满足
 $$
 S^D = \left\{\mathbf{x} = [x_1, x_2, \cdots, x_D]: x_i > 0,\ i = 1, 2, \cdots, D; \sum_{i=1}^D x_i = c\right\}
 $$
-的空间为**$D$维成分数据空间**，这里$c$是任意常数。
+的空间为$D$维成分数据空间，这里$c$是任意常数。
 
 $S^D$中的元素是$D$维行向量，但由于成分和为定值，所以是$D-1$维向量空间。
 
 成分数据所在的空间$S^D$称为单形空间，单形空间的几何结构在研究成分数据时有着很重要的作用。
 
-### $S^D$中的运算
+### 2.1.2   $S^D$中的运算
 
 ***定义2.1.2（加法运算）***   对于任意的$\mathbf{x, y} \in S^D$，定义$\mathbf{x, y}$的加法运算$\oplus$为：
 $$
@@ -39,7 +41,7 @@ $$
 \mathbf{x} \ominus \mathbf{y} = \mathbf{x} \oplus ((-1) \otimes \mathbf{y}) = \mathbf{x} \oplus \mathbf{y}^{-1}
 $$
 
-### $S^D$中运算的性质
+### 2.1.3   $S^D$中运算的性质
 
 ***性质2.1.1***   $(S^D, \oplus)$是可交换群，且满足：
 
@@ -54,6 +56,8 @@ $$
 2. 分配律1：$\alpha \otimes (\mathbf{x} \oplus \mathbf{y}) = (\alpha \otimes \mathbf{x}) \oplus (\alpha \otimes \mathbf{y})$
 3. 分配律2：$(\alpha + \beta) \otimes \mathbf{x} = (\alpha \otimes \mathbf{x}) \oplus (\beta \otimes \mathbf{x})$
 4. 存在单位元：$1 \otimes \mathbf{x} = \mathbf{x}$
+
+### 2.1.4   Aitchison距离及其性质
 
 ***定义2.1.5（Aitchison距离）***   对于任意的$\mathbf{x, y} \in S^D$，定义$\mathbf{x, y}$之间的Aitchison距离为：
 $$
@@ -90,6 +94,27 @@ $$
 ***定义2.1.8（正交）***   若成分向量$\mathbf{x, y} \in S^D$，且$\langle\mathbf{x,y}\rangle_a = 0$，则称$\mathbf{x, y}$正交。
 
 ## 2.2   成分数据的变换及其性质
+
+### 2.2.1   非对称对数比（alr）变换
+
+***定义2.2.1（非对称对数比变换）***   设$\mathbf{x} = [x_1, x_2, \cdots, x_D]$是成分向量，令
+$$
+y_i = \ln \frac{x_i}{x_D},\quad i=1,2,\cdots,D-1
+$$
+称此变换为非对称对数比变换。
+
+如果变换后的$\mathbf{y} = (y_1, y_2, \cdots, y_{D-1})$服从多元正态分布，则称$\mathbf{x} = [x_1, x_2, \cdots, x_D]$服从加法逻辑正态分布。
+
+对数比变换的特点：
+
+- 优势
+  1. 可以克服“定和限制”
+  2. 可以部分消除成分间的完全相关性，以便运用最小二乘法
+  3. 变换后的数据在$(-\infty, +\infty)$内取值，便于进行模型选择
+- 缺陷
+  1. 经对数比变换得到的新变量完全不能和原始变量相对应，使得模型的解释性不强
+
+
 
 
 

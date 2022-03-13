@@ -4,8 +4,7 @@ excerpt_separator: <!--more-->
 title: 《成分数据分析及其应用》笔记：第二章 成分数据简介
 permalink: compositional-data-analysis/chap02
 date: 2022-03-11
-categories:
-  - statistics
+categories: statistics
 tags: 
   - compositional data analysis
 ---
@@ -217,7 +216,7 @@ $\mathbf{U}$是$(D-1) \times D$维矩阵，$\mathbf{u}_i$是它的行向量
 
 $\mathbf{F} = [\mathbf{I}_ {D-1}, \mathbf{1}_ {D-1}^\top]^\top$
 
-$\mathbf{A} = \dfrac{1}{D} \left[\begin{array}D-1 & -1 & -1 & \cdots & -1 & -1 \\ -1 & D-1 & -1 & \cdots & -1 & -1 \\ -1 & -1 & D-1 & \cdots & -1 & -1 \\ \vdots & \vdots & \vdots & & \vdots & \vdots \\ -1 & -1 & -1 & \cdots & D-1 & -1\end{array}\right]_{(D-1) \times D}$
+$\mathbf{A} = \dfrac{1}{D} \begin{bmatrix}D-1 & -1 & -1 & \cdots & -1 & -1 \\\ -1 & D-1 & -1 & \cdots & -1 & -1 \\\ -1 & -1 & D-1 & \cdots & -1 & -1 \\\ \vdots & \vdots & \vdots & & \vdots & \vdots \\\ -1 & -1 & -1 & \cdots & D-1 & -1\end{bmatrix}_{(D-1) \times D}$
 
 ### 2.2.4   球坐标变换
 
@@ -260,7 +259,7 @@ $$
 $$
 \rho_{ij} = \mathrm{Corr}(x_i, x_j) = \frac{k_{ij}}{\sqrt{k_{ii} k_{jj}}},\quad i=1,\cdots,D;\ j=i+1,\cdots,D
 $$
-相关系数矩阵由$\dfrac{D(D-1)}{2}$个相关系数决定。
+相关系数矩阵由$\dfrac{D(D-1)}{2}$个相关系数决定。<span class="sidenote-number"></span><span class="sidenote">原书中相关系数的个数似乎有误。</span>
 
 缺乏可解释的协方差结构可以主要表述为以下几个方面：
 

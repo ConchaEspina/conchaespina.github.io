@@ -162,7 +162,7 @@ $$
   1. 变换后的各个分量之和为零
   2. 与之相对应的协方差阵是奇异的
 
-### 2.2.3   等距对数比(ilr)变换
+### 2.2.3   等距对数比（ilr）变换
 
 ***定义2.2.4（等距对数比变换）***   设$\mathbf{x} = [x_1, x_2, \cdots, x_D]$是成分向量，做如下变换：
 $$
@@ -199,7 +199,29 @@ $$
 $$
 \mathrm{ilr}(\mathbf{x}_1 \oplus \mathbf{x}_2) = \mathbf{y}_1 + \mathbf{y}_2 \\ \mathrm{ilr}(\alpha \otimes \mathbf{x}_i) = \alpha \mathbf{y}_i,\quad i=1,2
 $$
-*** 性质2.2.3***   对于任意的$\alpha, \beta \in \mathbb{R}$及$\mathbf{x}_1, \mathbf{x}_2 \in S^D, \mathbf{e}_i \in S^D$和$\mathbf{u}_i \in \mathbb{R}^{D-1}$如定理2.2.1和定理2.2.2所述，clr变换有如下结论成立：
+***性质2.2.3***   对于任意的$\alpha, \beta \in \mathbb{R}$及$\mathbf{x}_1, \mathbf{x}_2 \in S^D, \mathbf{e}_i \in S^D$和$\mathbf{u}_i \in \mathbb{R}^{D-1}$如定理2.2.1和定理2.2.2所述，clr变换有如下结论成立：
 $$
 \mathrm{clr}(\mathbf{e}_i) = \mathbf{u}_i \\ \mathrm{clr}((\alpha \otimes \mathbf{x}_1) \oplus (\beta \otimes \mathbf{x}_2)) = \alpha \mathrm{clr}(\mathbf{x}_1) + \beta \mathrm{clr}(\mathbf{x}_2)
 $$
+***定理2.2.3***   对任意的$\mathbf{x} \in S^D$，考虑正交基$\mathbf{e}_i = C(\exp(\mathbf{u}_i)),\ i=1,2,\cdots,D-1$，其中$\mathbf{e}_i \in S^D, \mathbf{u}_i \in \mathbb{R}^{D-1}$如定理2.2.1和定理2.2.2所述。则对于alr变换、clr变换、ilr变换有如下关系：
+$$
+\mathrm{clr}(\mathbf{x}) = \mathrm{ilr}(\mathbf{x}) \mathbf{U},\ \mathrm{alr}(\mathbf{x}) = \mathrm{ilr}(\mathbf{x}) \mathbf{UF},\ \mathrm{ilr}(\mathbf{x}) = \mathrm{clr}(\mathbf{x}) \mathbf{U}^\top = \mathrm{alr}(\mathbf{x}) \mathbf{AU}^\top
+$$
+其中：
+
+$\mathbf{U}$是$(D-1) \times D$维矩阵，$\mathbf{u}_i$是它的行向量
+
+$\mathbf{F} = [\mathbf{I}_{D-1}, \mathbf{1}_{D-1}^\top]^\top$
+
+$\mathbf{A} = \dfrac{1}{D} \begin{bmatrix}D-1 & -1 & -1 & \cdots & -1 & -1 \\ -1 & D-1 & -1 & \cdots & -1 & -1 \\ -1 & -1 & D-1 & \cdots & -1 & -1 \\ \vdots & \vdots & \vdots & & \vdots & \vdots \\ -1 & -1 & -1 & \cdots & D-1 & -1\end{bmatrix}_{(D-1) \times D}$
+
+### 2.2.4   球坐标变换
+
+球坐标变换可以解决对数比变换中零成分变换的困境。<span class="sidenote-number"></span><span class="sidenote-number">王惠文,刘强. (2002). 成分数据预测模型及其在中国产业结构趋势分析中的应用. *中外管理导报*(05), 27-29.</span>
+
+***定义2.2.5*** 对于成分向量$\mathbf{x} = [x_1, x_2, \cdots, x_D]$，满足定和限制$\sum\limits_{i=1}^D x_i = 1$，
+
+
+
+
+

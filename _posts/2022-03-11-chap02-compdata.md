@@ -114,13 +114,21 @@ $$
 - 缺陷
   1. 经对数比变换得到的新变量完全不能和原始变量相对应，使得模型的解释性不强
 
-
-
-
-
-
-
-
-
+在非对称对数比变换中，如果用$y_i$来表示$x_i$，有如下表达式：
+$$
+\begin{cases}x_i = \dfrac{e^{y_i}}{1 + \sum\limits_{j=1}^{D-1} e^{y_j}},\quad i=1,2,\cdots,D-1 \\ x_D = \dfrac{1}{1 + \sum\limits_{j=1}^{D-1} e^{y_j}}\end{cases}
+$$
+假设$\mathbf{y} = (y_1, y_2, \cdots, y_{D-1})\ \sim\ N(\mathbf{\mu, \Sigma})$，则$\mathbf{y}$的密度函数为
+$$
+\left(\frac{1}{\sqrt{2\pi}}\right)^{D-1} |\mathbf{\Sigma}|^{-1/2} \exp\left\{-\frac{1}{2}(\mathbf{y-\mu})^\top\mathbf{\Sigma}^{-1}(\mathbf{y-\mu})\right\}
+$$
+$\mathbf{x}$的密度函数为
+$$
+\left(\frac{1}{\sqrt{2\pi}}\right)^{D-1} |\mathbf{\Sigma}|^{-1/2} \prod_{j=1}^D x_j^{-1} \exp\left\{-\frac{1}{2}Q\right\}
+$$
+其中
+$$
+Q = (F \ln \mathbf{x - \mu})^\top |\mathbf\Sigma|^{-1/2} (F \ln \mathbf{x - \mu}),\quad F = (-\mathbf{1}, \mathbf{I}_{D-1})
+$$
 
 

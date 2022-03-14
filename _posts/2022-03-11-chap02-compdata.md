@@ -4,7 +4,7 @@ excerpt_separator: <!--more-->
 title: 《成分数据分析及其应用》笔记：第二章 成分数据简介
 permalink: compositional-data-analysis/chap02
 date: 2022-03-11
-categories: statistics
+categories: review
 tags: 
   - compositional data analysis
 ---

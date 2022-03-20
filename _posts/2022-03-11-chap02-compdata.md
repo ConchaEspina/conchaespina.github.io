@@ -259,18 +259,22 @@ $$
 $$
 \rho_{ij} = \mathrm{Corr}(x_i, x_j) = \frac{k_{ij}}{\sqrt{k_{ii} k_{jj}}},\quad i=1,\cdots,D;\ j=i+1,\cdots,D
 $$
-相关系数矩阵由$\dfrac{D(D-1)}{2}$个相关系数决定。<span class="sidenote-number"></span><span class="sidenote">原书中相关系数的个数似乎有误。</span>
+相关系数矩阵由$\dfrac{D(D-1)}{2}$个相关系数决定。<span class="sidenote-number"></span><span class="sidenote">原文写的是$\dfrac{1}{2}dD$个相关系数，但似乎没有找到$d$的定义。</span>
 
-缺乏可解释的协方差结构可以主要表述为以下几个方面：
+缺乏可解释的协方差结构可以主要表述为以下几个方面：<span class="sidenote-number"></span><span class="sidenote">对这些困难的详细阐述需参考原书，目前我并不能很好地理解它们。</span>
 
 1. 负偏困难
 2. 子成分困难
 3. 基困难
 4. 零相关困难
 
+### 2.3.3   参数建模困难
 
+在适当的样本空间内缺乏足够丰富的参数分布类来描述成分数据的变异性。
 
+### 2.3.4   混合变异困难
 
+由于因子是成分的$D$个部分，方差的自由度不再是原始的，所以成分数据在实验设计中方差性质的研究较为困难。
 
 
 

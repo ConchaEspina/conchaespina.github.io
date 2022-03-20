@@ -18,3 +18,31 @@ tags:
 
 ## 3.1   非参数方法
 
+设$D$维成分数据$\mathbf{x} \in S^D$有$Z$个零值，替换后的新成分数据用$\mathbf{r} = [r_1, r_2, \cdots, r_D]$表示。
+
+### 3.1.1   加法替换方法（Additive Replacement Strategy)
+
+
+
+
+
+### 3.1.2   简单替换方法（Simple Replacement Strategy）
+
+
+
+
+
+### 3.1.3   乘法替换方法（Multiplication Replacement Strategy）
+
+
+
+
+
+
+
+
+
+
+
+
+

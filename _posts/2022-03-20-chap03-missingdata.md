@@ -22,9 +22,15 @@ tags:
 
 ### 3.1.1   加法替换方法（Additive Replacement Strategy)
 
+$$
+r_j = \begin{cases}\dfrac{\delta(Z+1)(D-Z)}{D^2},\quad x_j = 0 \\ x_j - \dfrac{\delta(Z+1)Z}{D^2},\quad x_j>0\end{cases}
+$$
 
+其中，$j=1, 2, \cdots, D$，$\delta$是小于给定阈值的数。
 
+加法替换方法具有以下性质：
 
+1. 该方法
 
 ### 3.1.2   简单替换方法（Simple Replacement Strategy）
 

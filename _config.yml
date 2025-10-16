@@ -27,7 +27,7 @@ sass:
 
 baseurl: ""
 permalink: pretty
-timezone: Asia/Shanghai
+timezone: US/Detroit
 future: false
 
 exclude:

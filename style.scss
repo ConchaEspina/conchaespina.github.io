@@ -34,6 +34,15 @@
   font-display: swap;
 }
 
+/* Chinese */
+@font-face {
+  font-family: "Songti";
+  src: url("{{ '/fonts/Songti.ttc' | relative_url }}") format("ttc");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
 /**************************************
     $CRITICAL CSS
 **************************************/
